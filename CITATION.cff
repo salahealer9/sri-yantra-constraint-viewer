@@ -21,6 +21,9 @@ version: 1.0.0
 license: MIT
 identifiers:
   - type: doi
+    value: 10.5281/zenodo.20747115
+    description: This viewer (v1.0.0)
+  - type: doi
     value: 10.5281/zenodo.20708335
     description: Certified enumeration dataset (data source)
 repository-code: https://github.com/salahealer9/sri-yantra-constraint-viewer

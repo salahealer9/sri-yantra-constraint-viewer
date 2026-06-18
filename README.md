@@ -85,5 +85,7 @@ Viewer code: MIT (see LICENSE file). The figure data in `bundle/` is derived fro
 Once deposited on Zenodo, the viewer gets its own DOI, separate from the dataset.
 The dataset and viewer cross-reference each other:
 
+- Version DOI: `10.5281/zenodo.20747115`
+- Concept DOI: `10.5281/zenodo.20747114`
 - Viewer cites dataset: `10.5281/zenodo.20708335` (concept DOI)
 - Dataset cites viewer: `isSupplementedBy` → viewer DOI
