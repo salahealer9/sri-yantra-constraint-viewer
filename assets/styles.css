@@ -187,6 +187,7 @@ main { padding: 34px 0 64px; }
 .fig-foot   { fill: var(--brass); }
 .fig-bindu  { fill: var(--ink); }
 .fig-base   { fill: var(--ink-faint); }
+.fig-pt     { fill: var(--ink-soft); }
 .fig-label  { font-family: var(--f-mono); fill: var(--ink-soft); }
 
 /* gentle fade-in for the detail figure (lines stay solid) */

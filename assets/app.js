@@ -13,7 +13,7 @@
 
   var SAMPLE = window.__SAMPLE_BUNDLE__ || null;
   var BASE = 'bundle';
-  var VIEWER_URL = 'https://salahealer9.github.io/sri-yantra-constraint-viewer';
+  var VIEWER_URL = ''; // set to your deployed URL; falls back to the current page
   var app = document.getElementById('app');
   var manifest = null;
   var figCache = {};
@@ -132,6 +132,7 @@
       var gl = svgEl('g', {});
       Object.keys(fig.points).forEach(function (lbl) {
         var p = fig.points[lbl];
+        g.appendChild(svgEl('circle', { class: 'fig-pt', cx: p[0], cy: p[1], r: 0.007 }));
         var t = svgEl('text', { class: 'fig-label', x: p[0] + 0.018, y: -p[1] - 0.012, 'font-size': 0.05 });
         t.textContent = lbl;
         gl.appendChild(t);
@@ -212,7 +213,7 @@
       '.fig-axis{fill:none;stroke:#e4e2da;stroke-width:.0035;stroke-dasharray:.02 .02}' +
       '.fig-tri{fill:none;stroke-width:.006;stroke-linejoin:round}' +
       '.fig-tri.sakti{stroke:#b23a48}.fig-tri.siva{stroke:#2e4374}' +
-      '.fig-foot{fill:#9a7838}.fig-bindu{fill:#16181d}.fig-base{fill:#8b8d87}';
+      '.fig-foot{fill:#9a7838}.fig-bindu{fill:#16181d}.fig-base{fill:#8b8d87}.fig-pt{fill:#4c4f57}';
     var style = document.createElementNS(SVGNS, 'style');
     style.textContent = css;
     Array.prototype.forEach.call(clone.querySelectorAll('.fig-label'), function (t) {
