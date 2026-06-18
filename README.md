@@ -89,3 +89,11 @@ The dataset and viewer cross-reference each other:
 - Concept DOI: `10.5281/zenodo.20747114`
 - Viewer cites dataset: `10.5281/zenodo.20708335` (concept DOI)
 - Dataset cites viewer: `isSupplementedBy` → viewer DOI
+
+## Provenance verification
+
+Engine verification:
+  git rev-parse --short tier2-freeze-2:sriyantra_plane.py  → 985c741
+  git rev-parse --short 75aed90:sriyantra_plane.py         → 985c741
+  git diff tier2-freeze-2 75aed90 -- sriyantra_plane.py    → empty
+  Engine byte-identical between freeze tag and viewer build commit.
