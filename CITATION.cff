@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "Śrī Yantra Constraint Viewer — Certified Plane Atlas"
+message: If you use this viewer, please cite it using these metadata.
+type: software
+authors:
+  - given-names: Salah-Eddin
+    family-names: Gherbi
+    orcid: https://orcid.org/0009-0005-4017-1095
+abstract: >-
+  Interactive static viewer for the 128 certified distinct plane Śrī Yantra
+  configurations. Displays precomputed figures from the frozen certified
+  enumeration engine; performs no geometry computation. Each figure carries
+  embedded provenance (engine commit, dataset DOI, gate residual).
+keywords:
+  - Sri Yantra
+  - certified enumeration
+  - viewer
+  - visualization
+  - open science
+version: 1.0.0
+license: MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20708335
+    description: Certified enumeration dataset (data source)
+repository-code: https://github.com/salahealer9/sri-yantra-constraint-viewer
